@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Pod
-%define	pnam	DocBook
+%define		pdir	Pod
+%define		pnam	DocBook
 Summary:	Pod::DocBook perl module
 Summary(pl):	Modu³ perla Pod::DocBook
 Name:		perl-Pod-DocBook
