@@ -33,14 +33,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf CHANGES README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc CHANGES README
 %attr(755,root,root) %{_bindir}/pod2docbook
 %{perl_sitelib}/Pod/DocBook.pm
 %{_mandir}/man[13]/*
