@@ -3,13 +3,13 @@ Summary:	Pod-DocBook perl module
 Summary(pl):	Modu³ perla Pod-DocBook
 Name:		perl-Pod-DocBook
 Version:	0.05
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Pod/Pod-DocBook-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,14 +32,8 @@ perl Makefile.PL
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Pod/DocBook
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[13]/* \
-        CHANGES README
+gzip -9nf CHANGES README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
