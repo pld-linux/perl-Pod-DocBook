@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Pod-DocBook
 Name:		perl-Pod-DocBook
 Version:	0.05
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Pod/Pod-DocBook-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Pod/Pod-DocBook-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,10 +15,11 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Pod-DocBook - module to convert pod files to DocBook SGML. 
+Pod-DocBook - module to convert pod files to DocBook SGML.
 
 %description -l pl
-Pod-DocBook - modu³ do konwertowania plików pod do formatu DocBook SGML.
+Pod-DocBook - modu³ do konwertowania plików pod do formatu DocBook
+SGML.
 
 %prep
 %setup -q -n Pod-DocBook-%{version}
