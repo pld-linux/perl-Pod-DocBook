@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Pod
 %define	pnam	DocBook
-Summary:	Pod-DocBook perl module
-Summary(pl):	Modu³ perla Pod-DocBook
+Summary:	Pod::DocBook perl module
+Summary(pl):	Modu³ perla Pod::DocBook
 Name:		perl-Pod-DocBook
 Version:	0.05
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Pod-DocBook - module to convert pod files to DocBook SGML.
+Pod::DocBook - module to convert pod files to DocBook SGML.
 
 %description -l pl
-Pod-DocBook - modu³ do konwertowania plików pod do formatu DocBook
+Pod::DocBook - modu³ do konwertowania plików pod do formatu DocBook
 SGML.
 
 %prep
