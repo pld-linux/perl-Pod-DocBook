@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Pod
 %define	pnam	DocBook
@@ -6,7 +10,7 @@ Summary(pl):	Modu³ perla Pod::DocBook
 Name:		perl-Pod-DocBook
 Version:	0.05
 Release:	9
-License:	GPL
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	28b1cfac742ed48e81792929edc115bc
@@ -29,6 +33,8 @@ SGML.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
