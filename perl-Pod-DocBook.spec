@@ -6,7 +6,7 @@
 %define		pdir	Pod
 %define		pnam	DocBook
 Summary:	Pod::DocBook perl module
-Summary(pl):	Modu≥ perla Pod::DocBook
+Summary(pl.UTF-8):   Modu≈Ç perla Pod::DocBook
 Name:		perl-Pod-DocBook
 Version:	0.05
 Release:	10
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Pod::DocBook - module to convert pod files to DocBook SGML.
 
-%description -l pl
-Pod::DocBook - modu≥ do konwertowania plikÛw pod do formatu DocBook
+%description -l pl.UTF-8
+Pod::DocBook - modu≈Ç do konwertowania plik√≥w pod do formatu DocBook
 SGML.
 
 %prep
