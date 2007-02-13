@@ -6,7 +6,7 @@
 %define		pdir	Pod
 %define		pnam	DocBook
 Summary:	Pod::DocBook perl module
-Summary(pl.UTF-8):   Moduł perla Pod::DocBook
+Summary(pl.UTF-8):	Moduł perla Pod::DocBook
 Name:		perl-Pod-DocBook
 Version:	0.05
 Release:	10
