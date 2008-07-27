@@ -9,7 +9,7 @@ Summary:	Pod::DocBook perl module
 Summary(pl.UTF-8):	Moduł perla Pod::DocBook
 Name:		perl-Pod-DocBook
 Version:	0.05
-Release:	10
+Release:	11
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
