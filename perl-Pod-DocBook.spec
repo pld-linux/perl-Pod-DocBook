@@ -8,12 +8,12 @@
 Summary:	Pod::DocBook perl module
 Summary(pl.UTF-8):	Moduł perla Pod::DocBook
 Name:		perl-Pod-DocBook
-Version:	0.05
-Release:	11
+Version:	1.2
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	28b1cfac742ed48e81792929edc115bc
+# Source0-md5:	4d3d79d76585025cf8b2af98cee0e519
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README
+%doc README
 %attr(755,root,root) %{_bindir}/pod2docbook
 %{perl_vendorlib}/Pod/DocBook.pm
 %{_mandir}/man[13]/*
