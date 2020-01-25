@@ -4,7 +4,6 @@
 
 %define		pdir	Pod
 %define		pnam	DocBook
-%include	/usr/lib/rpm/macros.perl
 Summary:	Pod::DocBook perl module
 Summary(pl.UTF-8):	Moduł perla Pod::DocBook
 Name:		perl-Pod-DocBook
